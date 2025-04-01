@@ -66,7 +66,6 @@ if token_balance > amount:
 
 We choose each time check sender balance is 0.5 seconds, when transaction is successfull, print the transaction hash:
 ```swift
-            tx_hash = w3.eth.send_raw_transaction(signed_txn.rawTransaction)
-
-            print(f'Transaction Hash: {tx_hash.hex()}')
+tx_hash = w3.eth.send_raw_transaction(signed_txn.rawTransaction)
+print(f'Transaction Hash: {tx_hash.hex()}')
 ```
